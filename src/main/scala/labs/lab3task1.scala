@@ -16,8 +16,8 @@ class BranchControl extends Module {
 switch(io.fnct3){
     is("b000".U){xy:=io.arg_x === io.arg_y} //equal
     is("b001".U){xy:=io.arg_x =/= io.arg_y} //not equal
-    is("b100".U){xy:=io.arg_x.asSInt<=io.arg_y.asSInt} //lesser equal
-    is("b101".U){xy:=io.arg_x.asSInt>=io.arg_y.asSInt} // greater equal
+    is("b100".U){xy:=io.arg_x<io.arg_y} //lesser equal
+    is("b101".U){xy:=io.arg_x>io.arg_y }// greater equal
     is("b110".U){xy:=io.arg_x<=io.arg_y} //lesser than unsign
     is("b111".U){xy:=io.arg_x>=io.arg_y} //greater than unsign
 }
