@@ -1,0 +1,3 @@
+[submodule "ChiselGuide"]
+	path = ./ChiselGuide
+	url = https://github.com/samadpls/CHISEL-Projects.git
